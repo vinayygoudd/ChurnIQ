@@ -1,0 +1,16 @@
+[Unit]
+Description=ChurnIQ Flask API
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/ChurnIQ
+EnvironmentFile=/opt/ChurnIQ/.env
+Environment="PATH=/opt/ChurnIQ/.venv/bin"
+ExecStart=/opt/ChurnIQ/.venv/bin/gunicorn --workers 2 --bind 0.0.0.0:8000 --access-logfile - --error-logfile - src.api.app:app
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
