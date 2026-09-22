@@ -1,0 +1,483 @@
+
+/* =========================================================
+   ChurnIQ
+   Clean, restrained analytics interface
+   ========================================================= */
+
+:root {
+    --background: #f6f3ec;
+    --surface: #fffdf8;
+    --sidebar: #eee8dc;
+    --text: #29241e;
+    --muted: #71695e;
+    --border: #d8d0c2;
+    --border-light: #e9e3d9;
+    --accent: #b08a22;
+    --accent-light: #eee2bd;
+}
+
+
+/* =========================================================
+   Global
+   ========================================================= */
+
+html,
+body,
+.stApp {
+    background: var(--background) !important;
+    color: var(--text) !important;
+}
+
+.stApp {
+    color-scheme: light !important;
+}
+
+.block-container {
+    max-width: 1200px;
+    padding-top: 2.2rem;
+    padding-bottom: 3rem;
+}
+
+
+/* =========================================================
+   Sidebar
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+    background: var(--sidebar) !important;
+    border-right: 1px solid var(--border) !important;
+}
+
+section[data-testid="stSidebar"] > div {
+    background: var(--sidebar) !important;
+}
+
+
+/* Force ALL sidebar text to dark */
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] div,
+section[data-testid="stSidebar"] small {
+    color: var(--text) !important;
+}
+
+
+/* Sidebar brand */
+
+.brand {
+    padding: 0 0.2rem 1.35rem 0.2rem;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.brand-name {
+    color: var(--text) !important;
+    font-size: 1.35rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+}
+
+.brand-subtitle {
+    color: var(--muted) !important;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    margin-top: 0.35rem;
+}
+
+
+/* =========================================================
+   Sidebar navigation
+   ========================================================= */
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label {
+    color: var(--text) !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] label p {
+    color: var(--text) !important;
+}
+
+
+/* Radio circle */
+
+section[data-testid="stSidebar"]
+div[data-testid="stRadio"]
+div[role="radio"] {
+    background: transparent !important;
+}
+
+
+/* Selected radio */
+
+section[data-testid="stSidebar"]
+div[data-testid="stRadio"]
+div[role="radio"][aria-checked="true"] {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+}
+
+
+/* Radio inner elements */
+
+section[data-testid="stSidebar"]
+div[data-testid="stRadio"]
+div[role="radio"] > div {
+    border-color: var(--text) !important;
+}
+
+section[data-testid="stSidebar"]
+div[data-testid="stRadio"]
+div[role="radio"][aria-checked="true"] > div {
+    border-color: var(--accent) !important;
+}
+
+
+/* =========================================================
+   Main typography
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--text) !important;
+}
+
+h1 {
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.035em !important;
+    margin-bottom: 0.25rem !important;
+}
+
+h2 {
+    font-size: 1.35rem !important;
+}
+
+h3 {
+    font-size: 1.05rem !important;
+}
+
+.page-description {
+    color: var(--muted) !important;
+    font-size: 0.94rem;
+    line-height: 1.55;
+    max-width: 760px;
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   Form container
+   ========================================================= */
+
+div[data-testid="stForm"] {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    padding: 1.45rem 1.5rem 1.5rem 1.5rem !important;
+}
+
+
+/* =========================================================
+   Form section titles
+   ========================================================= */
+
+.form-section-title {
+    color: var(--muted) !important;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    margin-top: 0.8rem;
+    margin-bottom: 0.85rem;
+}
+
+.section-title {
+    color: var(--text) !important;
+    font-size: 1rem;
+    font-weight: 650;
+    margin-top: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.result-heading {
+    color: var(--text) !important;
+    font-size: 1.15rem;
+    font-weight: 650;
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+
+/* =========================================================
+   Labels
+   ========================================================= */
+
+div[data-testid="stForm"] label,
+div[data-testid="stForm"] label p {
+    color: var(--text) !important;
+}
+
+
+/* =========================================================
+   Select boxes
+   ========================================================= */
+
+div[data-testid="stSelectbox"] {
+    background: transparent !important;
+}
+
+div[data-testid="stSelectbox"] > div {
+    background: transparent !important;
+}
+
+div[data-baseweb="select"] {
+    background: transparent !important;
+}
+
+div[data-baseweb="select"] > div {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+}
+
+div[data-baseweb="select"] * {
+    color: var(--text) !important;
+}
+
+
+/* Dropdown menu */
+
+div[role="listbox"] {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+}
+
+div[role="option"] {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+}
+
+div[role="option"]:hover,
+div[role="option"][aria-selected="true"] {
+    background: var(--accent-light) !important;
+    color: var(--text) !important;
+}
+
+
+/* =========================================================
+   Number inputs
+   ========================================================= */
+
+/*
+   Explicitly reset the outer widget background.
+   This prevents the large pink/red blocks visible
+   around the number inputs.
+*/
+
+div[data-testid="stNumberInput"] {
+    background: transparent !important;
+}
+
+div[data-testid="stNumberInput"] > div {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+div[data-testid="stNumberInput"] input {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: none !important;
+}
+
+
+/* Number input buttons */
+
+div[data-testid="stNumberInput"] button {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+div[data-testid="stNumberInput"] button:hover {
+    background: var(--accent-light) !important;
+}
+
+
+/* =========================================================
+   Text input
+   ========================================================= */
+
+div[data-testid="stTextInput"] {
+    background: transparent !important;
+}
+
+div[data-testid="stTextInput"] > div {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+div[data-testid="stTextInput"] input {
+    background: var(--surface) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+}
+
+div[data-testid="stTextInput"] input::placeholder {
+    color: #958d80 !important;
+}
+
+
+/* =========================================================
+   Primary button
+   ========================================================= */
+
+button[kind="primary"] {
+    background: var(--text) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--text) !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+    box-shadow: none !important;
+}
+
+button[kind="primary"] p,
+button[kind="primary"] span {
+    color: #ffffff !important;
+}
+
+button[kind="primary"]:hover {
+    background: #40382f !important;
+    border-color: #40382f !important;
+}
+
+
+/* =========================================================
+   Metrics
+   ========================================================= */
+
+div[data-testid="stMetric"] {
+    background: transparent !important;
+    border-top: 1px solid var(--border) !important;
+    border-bottom: 1px solid var(--border) !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+    padding: 0.9rem 0 !important;
+    box-shadow: none !important;
+}
+
+div[data-testid="stMetricLabel"],
+div[data-testid="stMetricLabel"] p {
+    color: var(--muted) !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: var(--text) !important;
+}
+
+
+/* =========================================================
+   Assessment note
+   ========================================================= */
+
+.assessment-note {
+    background: var(--surface) !important;
+    border-left: 3px solid var(--accent) !important;
+    border-top: 1px solid var(--border-light) !important;
+    border-right: 1px solid var(--border-light) !important;
+    border-bottom: 1px solid var(--border-light) !important;
+    border-radius: 0 5px 5px 0 !important;
+    padding: 0.85rem 1rem !important;
+    margin-top: 1rem !important;
+    color: var(--muted) !important;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+}
+
+
+/* =========================================================
+   Dataframes
+   ========================================================= */
+
+div[data-testid="stDataFrame"] {
+    border: 1px solid var(--border) !important;
+    border-radius: 6px !important;
+    overflow: hidden !important;
+}
+
+
+/* =========================================================
+   Expanders
+   ========================================================= */
+
+div[data-testid="stExpander"] {
+    border: 1px solid var(--border) !important;
+    border-radius: 6px !important;
+    background: var(--surface) !important;
+}
+
+div[data-testid="stExpander"] summary,
+div[data-testid="stExpander"] summary span {
+    color: var(--text) !important;
+}
+
+
+/* =========================================================
+   Alerts
+   ========================================================= */
+
+div[data-testid="stAlert"] {
+    border-radius: 6px !important;
+}
+
+
+/* =========================================================
+   Dividers
+   ========================================================= */
+
+hr {
+    border-color: var(--border) !important;
+}
+
+
+/* =========================================================
+   Hide unnecessary Streamlit decoration
+   ========================================================= */
+
+/* Keep Streamlit's functionality but reduce visual noise */
+
+[data-testid="stToolbar"] {
+    opacity: 0.35;
+}
+
+[data-testid="stDecoration"] {
+    display: none;
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .block-container {
+        padding-top: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.7rem !important;
+    }
+}
+

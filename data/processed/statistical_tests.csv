@@ -1,0 +1,7 @@
+variable,test,statistic,p_value,dof
+MonthlyCharges,Mann-Whitney U,3667080.5,3.311627651988584e-54,
+tenure,Mann-Whitney U,7154668.0,2.419635517951866e-208,
+TotalCharges,Mann-Whitney U,6288982.0,1.9959848938845826e-84,
+Contract,Chi-square,1184.5965720837926,5.863038300673391e-258,2.0
+PaymentMethod,Chi-square,648.1423274814,3.6823546520097993e-140,3.0
+InternetService,Chi-square,732.309589667794,9.571788222840544e-160,2.0

@@ -1,0 +1,55 @@
+feature,mutual_information
+Contract_Month-to-month,0.09135496055997616
+tenure,0.06665375372429883
+TechSupport_No,0.06182272418184187
+OnlineSecurity_No,0.057119778961400636
+Contract_Two year,0.055571328477293847
+estimated_tenure_value,0.0535658943188182
+MonthlyCharges,0.04924240135756919
+PaymentMethod_Electronic check,0.047213709662560666
+InternetService_Fiber optic,0.04559650902003032
+tenure_bucket_0-6,0.04232740956898695
+electronic_payment,0.04229411041923692
+TotalCharges,0.0397498931327227
+OnlineSecurity_No internet service,0.03369656429435919
+charges_per_tenure_month,0.033431149278051464
+OnlineBackup_No,0.03328199497695872
+StreamingTV_No internet service,0.03324277813431187
+StreamingMovies_No internet service,0.029512246080500404
+DeviceProtection_No internet service,0.029474253636254
+OnlineBackup_No internet service,0.02867421430264261
+InternetService_No,0.0281149571854451
+active_service_count,0.026900958575640566
+tenure_bucket_49-72,0.02562551313231154
+DeviceProtection_No,0.024984289290643336
+PaperlessBilling_Yes,0.024524458596778542
+OnlineSecurity_Yes,0.022281680933840864
+PaymentMethod_Bank transfer (automatic),0.019895168910692984
+TechSupport_No internet service,0.01889286191395012
+Partner_Yes,0.018407781389021327
+TechSupport_Yes,0.017753456455168903
+PaperlessBilling_No,0.01733953037321001
+StreamingTV_No,0.017088529483338943
+PaymentMethod_Credit card (automatic),0.01627475527180655
+InternetService_DSL,0.013295077853350046
+Contract_One year,0.012835878938075362
+StreamingMovies_No,0.012777592644673375
+Dependents_Yes,0.011480951235946169
+tenure_bucket_13-24,0.009896132710287997
+Partner_No,0.009284556585057002
+PaymentMethod_Mailed check,0.008580422559418599
+Dependents_No,0.007911847563743857
+tenure_bucket_25-48,0.007731785829436566
+PhoneService_Yes,0.006660222067692567
+SeniorCitizen,0.006580627393318217
+MultipleLines_No phone service,0.0032735298272397184
+StreamingTV_Yes,0.002352191178472518
+gender_Male,0.00206115651322758
+MultipleLines_Yes,0.0
+MultipleLines_No,0.0
+PhoneService_No,0.0
+gender_Female,0.0
+DeviceProtection_Yes,0.0
+OnlineBackup_Yes,0.0
+StreamingMovies_Yes,0.0
+tenure_bucket_7-12,0.0

@@ -1,0 +1,47 @@
+{
+  "available": true,
+  "method": "LinearExplainer",
+  "base_value": -0.6487982374339061,
+  "features": [
+    {
+      "feature": "num__tenure",
+      "contribution": 0.7602254761161492
+    },
+    {
+      "feature": "num__MonthlyCharges",
+      "contribution": 0.6919547827269651
+    },
+    {
+      "feature": "cat__InternetService_DSL",
+      "contribution": -0.43594233895305706
+    },
+    {
+      "feature": "cat__tenure_bucket_0-6",
+      "contribution": 0.42959074268100905
+    },
+    {
+      "feature": "cat__InternetService_Fiber optic",
+      "contribution": -0.3205347821814335
+    },
+    {
+      "feature": "cat__Contract_Month-to-month",
+      "contribution": 0.2958658051462115
+    },
+    {
+      "feature": "num__electronic_payment",
+      "contribution": 0.19417514650828416
+    },
+    {
+      "feature": "cat__Contract_Two year",
+      "contribution": 0.16956117478223628
+    },
+    {
+      "feature": "num__active_service_count",
+      "contribution": -0.147504385945524
+    },
+    {
+      "feature": "cat__OnlineSecurity_No",
+      "contribution": 0.1329901889717043
+    }
+  ]
+}
